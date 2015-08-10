@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="welcome.css">
+
+<script type="text/javascript" src="client.js"></script>
+<script type="text/javascript" src="serverstub.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="welcome">
+ 
+   <img src="wimage.png" alt="Twidder Icon;" >
+
+   <div class="login">
+
+     <h>Login</h>
+	 <form onsubmit="l_in()">
+        Email:
+        <input type="email" name="l_email" required>
+        <br>
+        Password:
+        <input id="password0" type="password" name="l_password" required>
+		<br>
+		<input type="submit" value="Submit">
+     </form>
+
+   </div>
+   
+   <div class="signup">
+   
+     <h>Signup</h>
+      <form onsubmit="s_up()">
+	     First Name:
+		 <input id="fname1" type="text" name="s_fname" required>
+         <br>
+		 Last Name:
+		 <input id="lname1" type="text" name="s_lname" required>
+         <br>
+		 City:
+		 <input id="city1" type="text" name="s_city" required>
+         <br>
+		 Country:
+		 <input id="country1" type="text" name="s_country" required>
+         <br>
+		 Male:
+		 <input id="gender1" type="radio" name="sex" value="male" required>
+		 <br>
+		 Female:
+         <input type="radio" name="sex" value="female" required>
+		 <br>
+         Email:
+         <input id="email1" type="email" name="s_email" required>
+         <br>
+         Password:
+         <input id="password1" type="password" name="s_password" required>
+		 <br>	
+         Repeat Pas:
+         <input id="password2" type="password" name="s_rpassword" required>
+         <br>
+         <input type="submit" value="Submit">
+      </form>		 
+   
+   </div> 
+   
+</div>   
+
+</body>
+</html>

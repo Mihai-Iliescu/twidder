@@ -1,0 +1,59 @@
+body
+{
+    background-color: lightblue;
+}
+
+img
+{
+   width:340px;
+   height:400px;
+}   
+
+ .welcome
+{
+    position:relative;
+	margin: auto;
+	top: 100px;
+	right:150px;
+    width:340px;
+    height:400px;
+	line-height: 170%;
+	
+	
+}
+
+ .login
+ {   
+    position:absolute;
+	top: 0px;
+	left: 350px;
+    width:250px;
+    background-color: white;
+}	
+
+.signup
+{
+   position:absolute;
+   left: 350px;
+   width:250px;
+   bottom:0px;
+   background-color: white;
+}   
+
+h
+{
+    font-weight: bold;
+	font-size: 125%;
+}	
+
+input
+{
+    float: right;
+}
+
+.panel
+{
+	width:340px;
+    height:400px;
+	background-color: white;
+}
