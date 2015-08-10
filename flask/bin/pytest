@@ -1,0 +1,7 @@
+#!/home/mihai/project/flask/bin/python
+
+import warnings
+warnings.simplefilter('default', DeprecationWarning)
+
+from logilab.common.pytest import run
+run()

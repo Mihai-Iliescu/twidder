@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS Users;
+CREATE TABLE Users (
+	ID PRIMARY KEY,
+	email		VARCHAR(32)	NOT NULL,
+	password	VARCHAR(32)	NOT NULL,
+	token		VARCHAR(32),
+	firstname	VARCHAR(32)	NOT NULL,
+	lastname	VARCHAR(32)	NOT NULL,
+	gender		VARCHAR(32)	NOT NULL,
+	city		VARCHAR(32)	NOT NULL,
+	country		VARCHAR(32)	NOT NULL
+
+);
+
+DROP TABLE IF EXISTS Messages;
+CREATE TABLE Messages (
+	ID INTEGER PRIMARY KEY,
+	receiver INTEGER,
+	sender INTEGER,
+	message		VARCHAR(128),
+	time	DATETIME	DEFAULT (DATETIME(current_timestamp, 'localtime')),
+
+	FOREIGN KEY(receiver) REFERENCES Users(ID),
+	FOREIGN KEY(sender) REFERENCES Users(ID)
+);
